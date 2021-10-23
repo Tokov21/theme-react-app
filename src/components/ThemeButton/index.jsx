@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./ThemeButton.module.css";
 
 export default function ThemeButton(props) {
@@ -13,3 +14,8 @@ export default function ThemeButton(props) {
     </button>
   );
 }
+
+ThemeButton.propTypes = {
+  defaultTheme: PropTypes.string,
+  changeTheme: PropTypes.func,
+};
